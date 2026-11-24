@@ -1,0 +1,26 @@
+{
+  "name": "etapa-experimental",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Etapa experimental: integração síncrona (REST) x assíncrona (RabbitMQ)",
+  "scripts": {
+    "generate": "prisma generate",
+    "build": "prisma generate && tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@prisma/adapter-pg": "7.10.0",
+    "@prisma/client": "7.10.0",
+    "amqplib": "2.3.2",
+    "fastify": "5.10.0",
+    "pg": "8.23.1",
+    "undici": "7.30.2"
+  },
+  "devDependencies": {
+    "@types/node": "26.6.6",
+    "@types/pg": "8.23.1",
+    "prisma": "7.10.0",
+    "typescript": "7.0.2"
+  }
+}
